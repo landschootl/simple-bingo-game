@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link href="Loto.css" rel="stylesheet" type="text/css"
+    media="screen"/>
+   <script type="text/javascript" src="Loto.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Lotto Ludo </title>
+	
+<SCRIPT LANGUAGE="JavaScript"> //Date du jour
+Today = new Date;
+Jour = Today.getDate();
+Jour2 = Today.getDate()+1;
+Mois = (Today.getMonth())+1;
+Annee = Today.getFullYear();
+Message ="" + Jour + "/" + Mois + "/" + Annee;
+Message2 ="" + Jour2 + "/" + Mois + "/" + Annee;
+	</SCRIPT>
+	
+  </head>
+  
+  
+  <body>
+
+  <img class="petite" id="Logo" src="Logo.gif"> </img>
+  
+
+    <div id="Quest">
+	<h3>Configurer votre ticket : </h3><br>
+	
+	Ticket à modifier : <br>
+<INPUT TYPE="radio" id=radio1 NAME=NbTicket VALUE="Tick1" CHECKED>Ticket 1 
+<INPUT TYPE="radio" id=radio2 NAME=NbTicket VALUE="Tick2">Ticket 2 
+<INPUT TYPE="radio" id=radio3 NAME=NbTicket VALUE="Tick3">Ticket 3
+<br><br>
+Choisiser vos numéros : <br>
+<Input type="number" value="" id=nb1 />
+<Input type="number" value="" id=nb2 />
+<Input type="number" value="" id=nb3 />
+<Input type="number" value="" id=nb4 />
+<Input type="number" value="" id=nb5 />
+<Input type="number" value="" id=nb6 /><br><br>
+<Input type="Button" value="Valider" id=Button1 />
+</div>
+
+<div id="Rep">
+<h3>Résultat du tirage : </h3>
+<I><font color="FF0606">Ticket 1 :</font></I><span id=r1 class="encadre" value="" > </span><br><br>
+<I><font color="FF0606">Ticket 2 :</font></I><span id=r2 class="encadre" value="" > </span><br><br>
+<I><font color="FF0606">Ticket 3 :</font></I><span id=r3 class="encadre" value="" > </span><br><br>
+<Input disabled type="Button" value="Rejouer" id=Button3 />
+</div>
+  
+  <div id="Ticket">
+<img class="petite" id="Logot" src="Logot.png"> </img><br><br><br><br><br>
+<I><font color="FF0606">Ticket 1</font></I><br>
+<b><font color="#0000CD">La chance appartient à tout le monde.</font></b><br><br>
+Numéro choisi : <b><br><span id=x1 class="encadre" value="" > </span> | <span id=x2 class="encadre" value="" > </span> | <span id=x3 class="encadre" value="" > </span> | <span id=x4 class="encadre" value="" > </span> | <span id=x5 class="encadre" value="" > </span> | <span id=x6 class="encadre" value="" > </span>
+</b><br><br>
+Valable du: <SCRIPT LANGUAGE="JavaScript">document.write(Message);</SCRIPT>
+au <SCRIPT LANGUAGE="JavaScript">document.write(Message2);</SCRIPT><br>
+<font size=2><i>Des lots exclusif à gagner<i></font>
+<br><font size=2><i>Ticket créé par Ludovic.L<i></font>
+<img class="petite" id="Barre" src="Barre.gif"> </img>
+</div>
+
+    <div id="Ticket2">
+<img class="petite" id="Logot" src="Logot.png"> </img><br><br><br><br><br>
+<I><font color="FF0606">Ticket 2</font></I><br>
+<b><font color="#0000CD">La chance appartient à tout le monde.</font></b><br><br>
+Numéro choisi : <b><br><span id=x7 class="encadre" value="" > </span> | <span id=x8 class="encadre" value="" > </span> | <span id=x9 class="encadre" value="" > </span> | <span id=x10 class="encadre" value="" > </span> | <span id=x11 class="encadre" value="" > </span> | <span id=x12 class="encadre" value="" > </span>
+</b><br><br>
+Valable du: <SCRIPT LANGUAGE="JavaScript">document.write(Message);</SCRIPT>
+au <SCRIPT LANGUAGE="JavaScript">document.write(Message2);</SCRIPT><br>
+<font size=2><i>Des lots exclusif à gagner<i></font>
+<br><font size=2><i>Ticket créé par Ludovic.L<i></font>
+<img class="petite" id="Barre" src="Barre.gif"> </img>
+</div>
+
+  <div id="Ticket3">
+<img class="petite" id="Logot" src="Logot.png"> </img><br><br><br><br><br>
+<I><font color="FF0606">Ticket 3</font></I><br>
+<b><font color="#0000CD">La chance appartient à tout le monde.</font></b><br><br>
+Numéro choisi : <b><br><span id=x13 class="encadre" value="" > </span> | <span id=x14 class="encadre" value="" > </span> | <span id=x15 class="encadre" value="" > </span> | <span id=x16 class="encadre" value="" > </span> | <span id=x17 class="encadre" value="" > </span> | <span id=x18 class="encadre" value="" > </span>
+</b><br><br>
+Valable du: <SCRIPT LANGUAGE="JavaScript">document.write(Message);</SCRIPT>
+au <SCRIPT LANGUAGE="JavaScript">document.write(Message2);</SCRIPT><br>
+<font size=2><i>Des lots exclusif à gagner<i></font>
+<br><font size=2><i>Ticket créé par Ludovic.L<i></font>
+<img class="petite" id="Barre" src="Barre.gif"> </img>
+</div>
+
+<div id="Res">
+<Input type="Button" value="Effectuer le tirage" id=Button2 />
+<span id=Result class="encadre" value="" >
+</div>
+
+<h3><marquee direction="left" scrollamount="5">Site mise en oeuvre par Ludovic.L             Phrase philosophique : “L'importance n'est pas la force de tes coups, l'important c'est la force des coups que tu es capable d'encaisser tout en continuant d'avancer.”</marquee></h3>
+
+  </body>
+
+
+
+</html>
